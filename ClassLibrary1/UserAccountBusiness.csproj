@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary2\UserDataModel.csproj" />
+    <ProjectReference Include="..\ClassLibrary3\UserAccountDataService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UserAccountBusiness">
+      <HintPath>bin\Debug\net8.0\UserAccountBusiness.dll</HintPath>
+    </Reference>
+    <Reference Include="UserAccountDataService">
+      <HintPath>bin\Debug\net8.0\UserAccountDataService.dll</HintPath>
+    </Reference>
+    <Reference Include="UserDataModel">
+      <HintPath>bin\Debug\net8.0\UserDataModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
